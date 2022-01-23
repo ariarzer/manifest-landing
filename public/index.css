@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: Arial;
+}
+
+.Rounded {
+    display: inline-block;
+    height: var(--height);
+    border-radius: calc(var(--height) / 2);
+    padding:
+            calc((var(--height) - 1em) / 2 - 1px)
+            calc((var(--height) - 1em) / 2)
+            calc((var(--height) - 1em) / 2 + 1px)
+            calc((var(--height) - 1em) / 2);
+    box-sizing: border-box;
+}
+
+a.Rounded {
+    text-decoration: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
